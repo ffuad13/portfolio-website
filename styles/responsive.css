@@ -1,0 +1,52 @@
+@media (max-width: 947px) {
+  .container {
+    padding: 0 50px;
+  }
+
+  .menu-btn {
+    display: block;
+    z-index: 13;
+  }
+
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+
+  .menu {
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    background-color: #091d34;
+    left: -100%;
+    top: 0;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+
+  .menu.active {
+    left: 0;
+  }
+
+  .menu li {
+    display: block;
+  }
+
+  .menu a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
+  .txt-1 {
+    font-size: 22px;
+  }
+
+  .txt-2 {
+    font-size: 65px;
+  }
+
+  .txt-3 {
+    font-size: 30px;
+  }
+}
