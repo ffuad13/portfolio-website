@@ -1,4 +1,4 @@
-@media (max-width: 1104px) {
+@media (max-width: 1140px) {
   .home .container {
     margin-left: 0px;
   }
@@ -6,7 +6,7 @@
 
 @media (max-width: 991px) {
   .container {
-    padding: 0 50px;
+    padding: 0 20px;
   }
 }
 
@@ -24,7 +24,7 @@
     width: 100%;
     position: fixed;
     height: 100vh;
-    background-color: #091d34;
+    background-color: var(--color-3);
     left: -100%;
     top: 0;
     text-align: center;
@@ -56,6 +56,24 @@
 
   .txt-3 {
     font-size: 30px;
+  }
+
+  .container {
+    max-width: 800px;
+  }
+
+  .main-content .col {
+    width: 100%;
+  }
+
+  .start {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+
+  .end {
+    flex: 100%;
   }
 }
 
