@@ -1,0 +1,17 @@
+/* Light Side */
+:root,
+[data-theme="default"] {
+  --color-1: #fc7307;
+  --color-2: #091d34;
+  --color-3: #2169ba;
+  --bg-color: #f7e3d4;
+  --fff: #fff;
+}
+
+/* Dark Side */
+[data-theme="dark"] {
+  --color-1: #091d34;
+  --color2: #fc7307;
+  --color-3: #fff;
+  --bg-color: #236ab9;
+}
