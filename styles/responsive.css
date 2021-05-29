@@ -75,11 +75,20 @@
   .end {
     flex: 100%;
   }
+
+  .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 888px) {
   .img-profile {
     display: none;
+  }
+
+  .card {
+    width: 100%;
   }
 }
 
