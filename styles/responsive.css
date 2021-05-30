@@ -62,11 +62,12 @@
     max-width: 800px;
   }
 
-  .main-content .col {
+  .main-content .col,
+  .eduWork-content .col {
     width: 100%;
   }
 
-  .start {
+  .main-content .start {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
