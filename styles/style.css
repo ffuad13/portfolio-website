@@ -23,14 +23,18 @@ li {
 
 .main,
 .exp,
-.eduWork {
+.eduWork,
+.project,
+.contact-form {
   font-family: "Poppins", sans-serif;
   margin-top: -5px;
 }
 
 .main-content,
 .exp-content,
-.eduWork-content {
+.eduWork-content,
+.project-content,
+.contact-form-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -248,7 +252,8 @@ section {
   background: var(--bg-color-1);
 }
 
-.eduWork-content .col {
+.eduWork-content .col,
+.contact-form-content .col {
   width: calc(50% - 30px);
 }
 
@@ -273,16 +278,16 @@ section {
   background: var(--color-1);
 }
 
-/* =============exp section============= */
+/* =============exp & project section============= */
 .exp {
-  background: var(--bg-color-1);
+  background: var(--color-4);
   color: var(--wht);
 }
 
 .exp-title::after {
   content: "path I've learn";
   color: var(--color-1);
-  background: var(--bg-color-1);
+  background: var(--color-4);
 }
 
 .card {
@@ -311,6 +316,191 @@ section {
   margin: 10px 0 7px 0;
 }
 
+.project {
+  background: var(--color-4);
+  color: var(--wht);
+}
+
+.project-title::after {
+  content: "write the code";
+  color: var(--color-1);
+  background: var(--color-4);
+}
+
+/* ===project slide=== */
+
+.project .project-content {
+  position: relative;
+  margin: auto;
+  max-width: 800px;
+  justify-content: center;
+}
+
+.myProject {
+  display: none;
+}
+
+.myProject img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--color-1);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: -43px;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: -43px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: var(--color-2);
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+  text-align: center;
+  left: 0;
+}
+
+.numbTxt {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* =============contact form============= */
+.contact-form {
+  background: var(--bg-color-2);
+  color: var(--wht);
+}
+
+.contact-form-title::after {
+  content: "Get in touch";
+  color: var(--color-1);
+  background: var(--bg-color-2);
+}
+
+.icons {
+  margin: 10px 0;
+}
+
+.row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.info {
+  margin-left: 30px;
+}
+
+.row i {
+  font-size: 25px;
+  color: var(--color-1);
+}
+
+.name {
+  margin-right: 10px;
+}
+
+.fields {
+  display: flex;
+}
+
+.field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+input,
+textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 7px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+
+textarea {
+  padding-top: 10px;
+  resize: none;
+}
+
+.textarea {
+  height: 155px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  cursor: pointer;
+}
+
 /* =============slider button============= */
 .switch {
   position: relative;
@@ -323,6 +513,7 @@ section {
   opacity: 0;
   width: 0;
   height: 0;
+  margin-top: 10px;
 }
 
 .slider {

@@ -63,7 +63,8 @@
   }
 
   .main-content .col,
-  .eduWork-content .col {
+  .eduWork-content .col,
+  .contact-form-content .col {
     width: 100%;
   }
 
@@ -80,6 +81,10 @@
   .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
+  }
+
+  .eduWork-content .start {
+    margin-bottom: 35px;
   }
 }
 
