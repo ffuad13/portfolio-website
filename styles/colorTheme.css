@@ -8,6 +8,7 @@
   --bg-color: #faeee5;
   --bg-color-1: #4b8fdd;
   --bg-color-2: #1461b8;
+  --bg-footer: #091d34;
   --wht: #fff;
   --bck: #111;
 }
@@ -16,6 +17,6 @@
 [data-theme="dark"] {
   --color-1: #091d34;
   --color2: #fc7307;
-  --color-3: #fff;
+  --color-3: #111;
   --bg-color: #236ab9;
 }
