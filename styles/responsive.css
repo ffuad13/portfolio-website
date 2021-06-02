@@ -106,4 +106,12 @@
   .txt-3 {
     font-size: 25px;
   }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
 }
