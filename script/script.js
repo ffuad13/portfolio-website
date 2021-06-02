@@ -13,22 +13,28 @@ $(document).ready(() => {
   });
 });
 
-// project slide =============
-var projectIndex = 1;
+//project slide=============
+let projectIndex = 1;
+let timer = null;
 showProject(projectIndex);
 
 function plus(n) {
+  clearTimeout(timer);
   showProject((projectIndex += n));
 }
 
 function currentProject(n) {
+  clearTimeout(timer);
   showProject((projectIndex = n));
 }
 
 function showProject(n) {
-  var i;
-  var project = document.getElementsByClassName("myProject");
-  var dots = document.getElementsByClassName("dot");
+  let i;
+  let project = document.getElementsByClassName("myProject");
+  let dots = document.getElementsByClassName("dot");
+  if (n == undefined) {
+    n = ++projectIndex;
+  }
   if (n > project.length) {
     projectIndex = 1;
   }
@@ -43,4 +49,17 @@ function showProject(n) {
   }
   project[projectIndex - 1].style.display = "block";
   dots[projectIndex - 1].className += " active";
+  timer = setTimeout(showProject, 3000);
 }
+
+//dark-mode function=============
+const theme = document.getElementsByClassName("theme")[0];
+
+document.getElementById("toggler").checked = false;
+document.getElementById("toggler").addEventListener("change", (event) => {
+  if (event.target.checked) {
+    theme.setAttribute("data-theme", "dark");
+  } else {
+    theme.removeAttribute("data-theme");
+  }
+});
