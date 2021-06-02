@@ -14,18 +14,18 @@
       <nav class="navbar">
         <div class="container">
           <div class="logo">
-            <a href="#">「ffua<span>d13」</span></a>
+            <a href="#home">「ffua<span>d13」</span></a>
           </div>
           <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Edu & Work</a></li>
-            <li><a href="#">proJExp</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home" class="menu-btn">Home</a></li>
+            <li><a href="#main" class="menu-btn">About</a></li>
+            <li><a href="#eduWork" class="menu-btn">Edu & Work</a></li>
+            <li><a href="#exp" class="menu-btn">proJExp</a></li>
+            <li><a href="#contact-form" class="menu-btn">Contact</a></li>
             <li>
               <a>
-                <label class="switch">
-                  <input type="checkbox" />
+                <label class="switch" for="toggler">
+                  <input id="toggler" type="checkbox" />
                   <span class="slider round"></span>
                 </label>
               </a>
@@ -68,7 +68,7 @@
           </div>
           <div class="col end">
             <h3>I'm Faizul and I'm <span>a Human</span></h3>
-            <p>I'am a tech enthusiast, novice entrepreneur, and soon to be full-time coder. My passion for technology started when someone introduced a machine called a computer.</p>
+            <p>I'am a tech enthusiast, novice entrepreneur, and soon to be full-time coder. My passion for technology started when someone introduced me a machine called computer.</p>
             <a class="btn" href="#">Visit me</a>
           </div>
         </div>
@@ -88,10 +88,7 @@
         <div class="eduWork-content">
           <div class="col start">
             <h3>My Education and Working Experiences</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repellat velit, quia commodi dolore illo, sunt illum voluptatibus molestias deserunt sit neque, accusamus ipsam nulla quisquam cum alias repellendus? Tempora
-              accusamus eum ipsa odit quam deserunt natus aliquam magni vitae.
-            </p>
+            <p>My journey in seeking for knowledge includes formal and informal education.</p>
           </div>
           <div class="col end">
             <div class="list">
@@ -149,21 +146,27 @@
             <div class="box">
               <i class="fab fa-html5"></i>
               <div class="txt-box">HTML</div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, optio!</p>
+              <p>
+                A standard markup language for documents designed to be displayed in a web browser which is I learn for the first time in 2015 while I'm in college. Early this year I've learn it again intensively in Progate and other
+                learning courses.
+              </p>
             </div>
           </div>
           <div class="card">
             <div class="box">
               <i class="fab fa-css3"></i>
               <div class="txt-box">CSS</div>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, nam?</p>
+              <p>A stylesheet language used to describe the presentation of a document written in HTML or XML which is I learn along side with HTML since 2015 until now when building this portfolio and other web page project.</p>
             </div>
           </div>
           <div class="card">
             <div class="box">
               <i class="fab fa-js"></i>
               <div class="txt-box">JavaScript</div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nisi?</p>
+              <p>
+                Is best known as the scripting language for Web pages which I've learn early in this year when attending Foundation Program at Glints Academy. JavaScript is the second scripting language that I learn after learning basic PHP
+                in college.
+              </p>
             </div>
           </div>
         </div>
@@ -271,6 +274,14 @@
         </div>
       </div>
     </section>
+
+    <footer>
+      <div>
+        <i class="far fa-copyright"></i> 2021 | Created By <a href="#" target="_blank">「ffua<span>d13」</span></a>
+        <br />
+        All rights reserved
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>
