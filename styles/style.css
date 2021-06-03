@@ -143,11 +143,36 @@ section {
   display: none;
 }
 
+.up-btn {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  color: var(--color-1);
+  right: 25px;
+  bottom: 10px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 45px;
+  z-index: 13;
+  background: var(--wht);
+  border-radius: 7px;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3 ease;
+}
+
+.up-btn.show {
+  bottom: 25px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* =============home section============= */
 .home {
   background: #1d4350;
   background: -webkit-linear-gradient(to right, #a43931, #1d4350);
-  background: linear-gradient(to right, #a43931, #1d4350);
+  background: var(--bg-grad);
   display: flex;
   height: 100vh;
   font-family: "Ubuntu", sans-serif;
@@ -199,12 +224,12 @@ section {
   max-width: 350px;
   width: 100%;
   height: auto;
-  border: 5px solid whitesmoke;
+  border: 5px solid var(--wht);
   border-radius: 13%;
 }
 
 .waves {
-  background: linear-gradient(to right, #a43931, #1d4350);
+  background: var(--bg-grad);
 }
 
 /* =============main section============= */
@@ -231,7 +256,8 @@ section {
   margin-bottom: 10px;
 }
 
-.main span {
+.main span,
+.edu {
   color: var(--color-1);
 }
 
@@ -248,14 +274,14 @@ section {
 }
 
 .eduWork-title::after {
-  content: "path I've learn";
+  content: "knowledge journey";
   color: var(--color-1);
   background: var(--bg-color-1);
 }
 
 .eduWork-content .col,
 .contact-form-content .col {
-  width: calc(50% - 30px);
+  width: calc(50% - 20px);
 }
 
 .list {
@@ -279,10 +305,26 @@ section {
   background: var(--color-1);
 }
 
-/* =============exp & project section============= */
+.courses {
+  background: var(--color-2);
+}
+
+.jobs {
+  background: var(--red);
+}
+
+.course {
+  color: var(--color-2);
+}
+
+.job {
+  color: var(--red);
+}
+
+/* =============exp section============= */
 .exp {
   background: var(--color-4);
-  color: var(--wht);
+  color: var(--bck-1);
 }
 
 .exp-title::after {
@@ -317,13 +359,15 @@ section {
   margin: 10px 0 7px 0;
 }
 
+/* =============project section============= */
+
 .project {
   background: var(--color-4);
-  color: var(--wht);
+  color: var(--wht-1);
 }
 
 .project-title::after {
-  content: "write the code";
+  content: "when write the code";
   color: var(--color-1);
   background: var(--color-4);
 }
@@ -381,19 +425,19 @@ section {
 }
 
 .text {
-  color: var(--wht);
+  color: var(--wht-1);
   font-weight: 600;
   font-size: 18px;
   padding: 8px 12px;
   position: absolute;
-  top: -33px;
+  top: -35px;
   width: 100%;
   text-align: center;
   left: 0;
 }
 
 .numbTxt {
-  color: #f2f2f2;
+  color: var(--wht-1);
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -433,7 +477,7 @@ section {
 /* =============contact form============= */
 .contact-form {
   background: var(--bg-color-2);
-  color: var(--wht);
+  color: var(--wht-1);
 }
 
 .contact-form-title::after {
@@ -459,6 +503,18 @@ section {
 .row i {
   font-size: 25px;
   color: var(--color-1);
+}
+
+.title {
+  font-weight: 600;
+}
+
+fieldset {
+  border-radius: 7px;
+}
+
+legend {
+  margin-left: 13px;
 }
 
 .name {
@@ -500,17 +556,20 @@ textarea {
 button {
   width: 100%;
   cursor: pointer;
+  color: var(--wht-1) !important;
 }
+
+/* =============footer============= */
 
 footer {
   background: var(--bg-footer);
-  color: var(--wht);
+  color: var(--wht-1);
   padding: 20px 25px;
   text-align: center;
 }
 
 footer a {
-  color: var(--wht);
+  color: var(--wht-1);
 }
 
 footer span {

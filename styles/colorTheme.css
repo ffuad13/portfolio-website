@@ -1,22 +1,35 @@
 /* Light Side */
 :root,
 [data-theme="default"] {
-  --color-1: #fc7307;
-  --color-2: #091d34;
-  --color-3: #2169ba;
-  --color-4: #616161;
+  --wht: #fff;
+  --wht-1: #fff;
+  --bck: #111;
+  --bck-1: #111;
+  --bg-grad: linear-gradient(to right, #1d4350, #a43931);
   --bg-color: #faeee5;
   --bg-color-1: #4b8fdd;
   --bg-color-2: #1461b8;
   --bg-footer: #091d34;
-  --wht: #fff;
-  --bck: #111;
+  --color-1: #fc7307;
+  --color-2: #174983;
+  --color-3: #2169ba;
+  --color-4: #616161;
+  --red: #f00;
 }
 
 /* Dark Side */
 [data-theme="dark"] {
-  --color-1: #091d34;
-  --color2: #fc7307;
-  --color-3: #111;
-  --bg-color: #236ab9;
+  --wht: #111;
+  --wht-1: #fff;
+  --bck: #111;
+  --bck-1: #fff;
+  --bg-grad: linear-gradient(to right, #a43931, #1d4350);
+  --bg-color: #757575;
+  --bg-color-1: #396da8;
+  --bg-color-2: #1a4575;
+  --bg-footer: #030a11;
+  --color-1: #e86602;
+  --color-2: #091d34;
+  --color-3: #153f6f;
+  --color-4: #363636;
 }

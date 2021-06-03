@@ -1,12 +1,23 @@
 $(document).ready(() => {
+  // when window scroll=============
   $(window).scroll(() => {
     if (this.scrollY > 20) {
       $(".navbar").addClass("sticky");
     } else {
       $(".navbar").removeClass("sticky");
     }
+    if (this.scrollY > 500) {
+      $(".up-btn").addClass("show");
+    } else {
+      $(".up-btn").removeClass("show");
+    }
   });
 
+  $(".up-btn").click(() => {
+    $("html").animate({ scrollTop: 0 });
+  });
+
+  // responsive menu=============
   $(".menu-btn").click(() => {
     $(".menu").toggleClass("active");
     $(".menu-btn i").toggleClass("active");
