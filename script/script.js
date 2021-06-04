@@ -17,10 +17,29 @@ $(document).ready(() => {
     $("html").animate({ scrollTop: 0 });
   });
 
+  $("#follow").click(() => {
+    $(".media-icons i").toggleClass("shows");
+  });
+
   // responsive menu=============
   $(".menu-btn").click(() => {
     $(".menu").toggleClass("active");
     $(".menu-btn i").toggleClass("active");
+  });
+
+  // typing Animation=============
+  var typed = new Typed(".typing", {
+    strings: ["a coder", "a dreamer", "an only human"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+  });
+
+  var typed = new Typed(".typing-1", {
+    strings: ["a coder", "a dreamer", "an only human"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
   });
 });
 
