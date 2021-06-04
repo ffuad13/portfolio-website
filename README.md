@@ -6,7 +6,7 @@ In order to pass the test, the site must include some requirement which are:
 1. A header
 2. A main section
 3. One extra section
-4. A contact form that must use `<input>` and `<textarea>` HTML tag
+4. A contact form that must use `<input>` and `<textarea>`
 5. A footer
 6. An animation
 7. Needs to be responsive
