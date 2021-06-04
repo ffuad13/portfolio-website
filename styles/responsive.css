@@ -114,4 +114,8 @@
   .next {
     right: 0;
   }
+
+  .media-icons i {
+    margin: 0 10px;
+  }
 }
