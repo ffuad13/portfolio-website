@@ -19,6 +19,10 @@ li {
   display: inline-block;
 }
 
+img {
+  filter: var(--img-bright);
+}
+
 .container {
   max-width: 1300px;
   padding: 0 80px;
@@ -159,7 +163,7 @@ section {
   cursor: pointer;
   pointer-events: none;
   opacity: 0;
-  transition: all 0.3 ease;
+  transition: all 0.6 ease;
 }
 
 .up-btn.show {
@@ -215,9 +219,39 @@ section {
   transition: all 0.3s ease;
 }
 
-.btn:active {
+.btn:hover {
   background: none;
   color: var(--color-1);
+}
+
+.media-icons i {
+  font-size: 0;
+  margin: 0 20px;
+  transition: all 0.3s ease;
+}
+
+.media-icons i:hover {
+  transform: scale(3.13);
+}
+
+.media-icons i.shows {
+  font-size: 20px;
+}
+
+.linkedin {
+  color: #0077b5;
+}
+
+.github {
+  color: #111;
+}
+
+.telegram {
+  color: #08c;
+}
+
+.messenger {
+  color: #006aff;
 }
 
 .home img {
@@ -594,10 +628,10 @@ footer span {
 .slider {
   position: absolute;
   cursor: pointer;
-  top: 0;
+  top: -4px;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 4px;
   background-color: #2196f3;
   -webkit-transition: 0.4s;
   transition: 0.4s;
