@@ -14,6 +14,7 @@
   --color-2: #174983;
   --color-3: #2169ba;
   --color-4: #616161;
+  --img-bright: brightness(100%);
   --red: #f00;
 }
 
@@ -32,4 +33,5 @@
   --color-2: #091d34;
   --color-3: #153f6f;
   --color-4: #363636;
+  --img-bright: brightness(50%);
 }
