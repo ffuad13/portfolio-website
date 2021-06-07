@@ -4,6 +4,12 @@
   }
 }
 
+@media (max-width: 1056px) {
+  .main-content .end {
+    padding-left: 10px;
+  }
+}
+
 @media (max-width: 991px) {
   .container {
     padding: 0 20px;
